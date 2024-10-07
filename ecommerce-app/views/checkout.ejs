@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+<h2>Checkout</h2>
+<form action="/orders/checkout" method="POST">
+  <!-- In a real application, user_id should come from the session -->
+  <input type="hidden" name="user_id" value="1">
+  <button type="submit">Place Order</button>
+</form>
+
+<%- include('partials/footer') %>

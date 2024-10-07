@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<h2>Add New Product</h2>
+<form action="/products/admin/add" method="POST">
+  <label>Name:</label>
+  <input type="text" name="name" required>
+  <br>
+  <label>Description:</label>
+  <textarea name="description"></textarea>
+  <br>
+  <label>Price:</label>
+  <input type="number" name="price" step="0.01" required>
+  <br>
+  <label>Image URL:</label>
+  <input type="text" name="image_url">
+  <br>
+  <button type="submit">Add Product</button>
+</form>
+
+<%- include('partials/footer') %>
